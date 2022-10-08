@@ -1,0 +1,47 @@
+@import '../../index.scss';
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $text-color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 15px $primary;
+  z-index: 100;
+
+  &__nav {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+
+    &_link {
+      text-decoration: none;
+      color: $primary;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        color: $secondary-light;
+      }
+
+      &_active {
+        text-decoration: none;
+        color: $secondary-light;
+        border-bottom: 1px solid $secondary-light;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &:active {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

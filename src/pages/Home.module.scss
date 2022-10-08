@@ -1,0 +1,58 @@
+@import '../index.scss';
+
+.banner {
+  width: 90%;
+  margin: 120px auto 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 350px;
+    background-image: linear-gradient(89deg, #272727cc 53%,#27272799 62%,#27272766 70%,#2727271a 81%,#2727270f 91%,#27272703 98%);
+
+    & p {
+      width: 60%;
+    }
+
+    & .more {
+      color: $text-color;
+      font-size: 30px;
+    }
+
+    & .fave {
+      cursor: pointer;
+      font-size: 25px;
+      margin-right: 15px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &_active {
+        color: $secondary-light;
+        cursor: pointer;
+        font-size: 25px;
+        margin-right: 15px;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  &__right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 60%;
+    z-index: -1;
+  }
+}
