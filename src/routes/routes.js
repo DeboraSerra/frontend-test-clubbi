@@ -1,11 +1,18 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import App from '../App';
+import FilmId from '../pages/FilmId';
+import Films from '../pages/FilmId';
+import Home from '../pages/Home';
+import MyFilms from '../pages/MyFilms';
 
 function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={ <App /> } />
+        <Route path="/" element={ <Home /> } />
+        <Route path="/films" element={ <Films /> } />
+        <Route path="/films/:id" element={ <FilmId /> } />
+        <Route path="/my-films" element={ <MyFilms /> } />
+        <Route path="*" element={ <Home /> } />
       </Routes>
     </BrowserRouter>
   )
