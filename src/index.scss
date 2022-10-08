@@ -1,0 +1,40 @@
+$small: 320px;
+$medium: 650px;
+$large: 1200px;
+
+$text-color: #f8f8f8;
+
+$primary: #000;
+$primary-light: #272727;
+
+$secondary: #520000;
+$secondary-light: #880101;
+$secondary-dark: #2e0101;
+
+$accent: #1f5300;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $primary-light;
+  color: $text-color;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+
+  &-thumb {
+    background-color: $secondary-dark;
+    border-radius: 20px;
+  }
+
+  &-track {
+    background-color: $secondary-light;
+    border-radius: 20px;
+  }
+}
