@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { MdFavorite as Favorite } from 'react-icons/md';
 import { CgMoreVertical as More } from 'react-icons/cg';
@@ -36,7 +37,6 @@ function Card({ img, title, score, id, isSmall = true }) {
           </div>
           <div>
             <Favorite
-              aria-label="Adicionar aos favoritos"
               onClick={handleFavorite}
               title="Adicionar aos favoritos"
               className={
@@ -53,6 +53,18 @@ function Card({ img, title, score, id, isSmall = true }) {
       </div>
     </div>
   );
+}
+
+Card.propTypes = { 
+  img: PropTypes.string.isRequired, 
+  title: PropTypes.string.isRequired, 
+  score: PropTypes.number.isRequired, 
+  id: PropTypes.string.isRequired, 
+  isSmall: PropTypes.bool
+}
+
+Card.defaultProps = {
+  isSmall: true,
 }
 
 export default Card;

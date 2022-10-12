@@ -80,8 +80,8 @@ function BigCard() {
           <div className={ style.banner__left }>
             <h3 className={ style.banner__left_title }>{ title }</h3>
             <p className={ style.banner__left_score }><Star className={ style.star } />{ score }</p>
-            <p>{`Ano de lancamento: ${released}`}</p>
-            <p>{`Duracao: ${duration} min`}</p>
+            <p>{`Ano de lançamento: ${released}`}</p>
+            <p>{`Duração: ${duration} min`}</p>
             <p>{`Dirigido por: ${director}`}</p>
             <button className={ style.banner__left_btn } title="Adicionar aos favoritos" onClick={handleFavorite}>
               <Favorite className={ isFavorite ? "fave_active" : "fave" } />
@@ -96,7 +96,7 @@ function BigCard() {
         </div>
       </div>
       <div className={ style.card__info }>
-        <p>{`Titulo original: ${originalTitle} (${originalRomanised})`}</p>
+        <p>{`Título original: ${originalTitle} (${originalRomanised})`}</p>
         <p>{description}</p>
         <p>{`Produzido por: ${producer}`}</p>
       </div>
@@ -118,14 +118,14 @@ function BigCard() {
       )}
       {locations && (
         <div className={ style.card__row }>
-          <h2>Localizacoes</h2>
+          <h2>Localizações</h2>
           <Row>
             {locations?.map(({ id, name, climate, terrain, surface_water: surfaceWater }) => (
               <TextCard key={id}>
                 <h3>{name}</h3>
                 <p>{`Clima: ${climate}`}</p>
                 <p>{`Terreno: ${terrain}`}</p>
-                <p>{`Nivel do mar: ${surfaceWater}`}</p>
+                <p>{`Nível do mar: ${surfaceWater}`}</p>
               </TextCard>
             ))}
           </Row>

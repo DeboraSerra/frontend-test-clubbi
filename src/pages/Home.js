@@ -69,7 +69,6 @@ function Home() {
           <p>{movie.duration}</p>
           <div>
             <Favorite
-              aria-label="Adicionar aos favoritos"
               onClick={() => handleFavorite(movie.id)}
               title="Adicionar aos favoritos"
               className={
@@ -101,7 +100,7 @@ function Home() {
           </Row>
         </>
       )}
-      <h2>Melhores classificados</h2>
+      <h2>Melhores Classificações</h2>
       <Row>
         {betterRate.map((movie) => (
           <Card

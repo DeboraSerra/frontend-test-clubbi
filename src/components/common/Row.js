@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import style from './Row.module.scss';
 
 function Row({ children }) {
@@ -7,5 +8,9 @@ function Row({ children }) {
     </div>
   )
 }
+
+Row.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Row;
