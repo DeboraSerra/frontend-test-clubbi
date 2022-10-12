@@ -139,7 +139,7 @@ function BigCard() {
               <TextCard key={id}>
                 <h3>{name}</h3>
                 <p>{`Tipo: ${vClass}`}</p>
-                <p>{`Descicao: ${description}`}</p>
+                <p>{`Descrição: ${description}`}</p>
                 <p>{`Comprimento: ${length}`}</p>
               </TextCard>
             ))}

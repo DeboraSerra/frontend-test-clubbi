@@ -9,6 +9,7 @@ function Header() {
       </Link>
       <nav className={ style.header__nav}>
         <NavLink className={ ({ isActive }) => isActive ? style.header__nav_link_active : style.header__nav_link} to="/favorites">Minha lista</NavLink>
+        <NavLink className={ ({ isActive }) => isActive ? style.header__nav_link_active : style.header__nav_link} to="/search">Pesquisar</NavLink>
       </nav>
     </header>
   )

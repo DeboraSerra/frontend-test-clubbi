@@ -1,0 +1,44 @@
+@import '../index.scss';
+
+.search {
+  &_container {
+    margin-top: 100px;
+  }
+
+  &_title {
+    margin-bottom: 28px;
+    padding-bottom: 12px;
+    text-align: center;
+    border-bottom: 1px solid $accent;
+  }
+}
+
+.btn_container {
+  width: 50%;
+  display: flex;
+  margin: 40px auto;
+  justify-content: space-between;
+
+  & button {
+    border: none;
+    background-color: $secondary;
+    padding: 12px 24px;
+    box-shadow: 0 0 15px $primary;
+    border-radius: 8px;
+    cursor: pointer;
+    color: $text-color;
+
+    &:active {
+      box-shadow: 0 0 5px $primary;
+    }
+  }
+}
+
+.cards_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 180px);
+  width: 90%;
+  gap: 32px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
