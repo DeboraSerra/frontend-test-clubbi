@@ -5,7 +5,13 @@
   display: flex;
   justify-content: flex-start;
   overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding: 20px;
   margin: 20px 0;
+  gap: 12px;
+
+  & div {
+    min-width: 150px;
+    text-align: center;
+  }
 }

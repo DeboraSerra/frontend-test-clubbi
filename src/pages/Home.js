@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import Card from '../components/Cards/Card';
 import Row from '../components/common/Row';
 import { addToFavorites, removeFromFavorites, setFilms } from '../redux/slices/films.slice';
-import { getAllFilms } from '../utils/api';
 import { CgMoreAlt as More } from 'react-icons/cg';
 import { MdFavorite as Favorite } from 'react-icons/md';
+import { fetchApi, API_URL } from '../utils/api';
 import style from './Home.module.scss';
 import Loading from '../components/common/Loading';
 import Header from '../components/Header/Header';
@@ -27,7 +27,6 @@ function Home() {
 
   const handleFavorite = (id) => {
     const film = films.find(({ id: fId }) => fId === id);
-    console.log(film)
     if (favorites.some(({ id: fId }) => fId === id)) {
       dispatch(removeFromFavorites(film));
       return;
@@ -36,7 +35,7 @@ function Home() {
   };
 
   const getMovies = async () => {
-    const films = await getAllFilms();
+    const films = await fetchApi(`${API_URL}/films`);
     setState((prevSt) => ({
       ...prevSt,
       movies: films,
