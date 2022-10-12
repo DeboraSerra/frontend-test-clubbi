@@ -11,7 +11,7 @@ function Router() {
         <Route path="/" element={ <Home /> } />
         <Route path="/films" element={ <Films /> } />
         <Route path="/films/:id" element={ <FilmId /> } />
-        <Route path="/my-films" element={ <MyFilms /> } />
+        <Route path="/favorites" element={ <MyFilms /> } />
         <Route path="*" element={ <Home /> } />
       </Routes>
     </BrowserRouter>
