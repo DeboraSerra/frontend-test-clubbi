@@ -1,11 +1,2 @@
 export { API_URL } from './apiUrl';
-export { getAllFilms } from './getAllFilms';
-export { getAllLocations } from './getAllLocations';
-export { getAllPeople } from './getAllPeople';
-export { getAllSpecies } from './getAllSpecies';
-export { getAllVehicle } from './getAllVehicle';
-export { getOneFilm } from './getOneFilm';
-export { getOneLocation } from './getOneLocations';
-export { getOnePerson } from './getOnePeople';
-export { getOneSpecies } from './getOneSpecies';
-export { getOneVehicle } from './getOneVehicle';
+export { fetchApi } from './fetchApi';
