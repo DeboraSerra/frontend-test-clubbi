@@ -9,7 +9,7 @@ import {
   removeFromFavorites,
 } from '../../redux/slices/films.slice';
 
-function Card({ img, title, score, id }) {
+function Card({ img, title, score, id, isSmall = true }) {
   const {
     films: { favorites, films },
   } = useSelector((state) => state);
@@ -26,13 +26,13 @@ function Card({ img, title, score, id }) {
   };
 
   return (
-    <div className={style.card}>
+    <div className={isSmall ? style.card : style.big_card }>
       <div className={style.card__content}>
-        <img src={img} alt={title} width="150px" />
+        <img src={img} alt={title} width={ isSmall ? "150px" : "400px" } />
         <div className={style.card__btn_sect}>
           <div>
             <h3>{title}</h3>
-            <p><Star className={ style.star } />{score}</p>
+            <p className={ style.score }><Star className={ style.star } />{score}</p>
           </div>
           <div>
             <Favorite

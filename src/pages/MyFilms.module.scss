@@ -1,0 +1,20 @@
+@import '../index.scss';
+
+.favorites {
+  width: 90%;
+  margin: 100px auto;
+
+  &__title {
+    margin-bottom: 28px;
+    padding-bottom: 12px;
+    text-align: center;
+    border-bottom: 1px solid $secondary-dark;
+  }
+
+  &__cards_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 500px);
+    width: 100%;
+    gap: 32px;
+  }
+}
