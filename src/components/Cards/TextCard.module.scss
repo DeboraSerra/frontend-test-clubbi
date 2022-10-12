@@ -1,0 +1,16 @@
+@import '../../index.scss';
+
+.text_card {
+  width: 150px;
+  margin: 0 12px;
+  height: fit-content;
+  min-height: 250px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px $primary;
+  padding: 12px 8px;
+  border-radius: 8px;
+}
