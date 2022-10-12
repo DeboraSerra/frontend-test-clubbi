@@ -5,11 +5,13 @@ $large: 1200px;
 $text-color: #f8f8f8;
 
 $primary: #000;
-$primary-light: #272727;
+$primary-light: rgb(58, 55, 72);
 
-$secondary: #520000;
-$secondary-light: #880101;
-$secondary-dark: #2e0101;
+$secondary: #3A442A;
+$secondary-light: #5B5643;
+$secondary-dark: #2B3E3A;
+
+$accent: #ba5a66;
 
 * {
   box-sizing: border-box;
@@ -27,12 +29,48 @@ body {
   width: 10px;
 
   &-thumb {
-    background-color: $secondary-dark;
+    background-color: $secondary;
     border-radius: 20px;
   }
 
   &-track {
-    background-color: $secondary-light;
+    background-color: transparent;
     border-radius: 20px;
+  }
+}
+
+.fave {
+  cursor: pointer;
+  font-size: 25px;
+  margin-right: 15px;
+  color: $text-color;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &_active {
+    color: $accent;
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 15px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.more {
+  color: $text-color;
+  text-decoration: none;
+  font-size: 25px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: $secondary-dark;
   }
 }

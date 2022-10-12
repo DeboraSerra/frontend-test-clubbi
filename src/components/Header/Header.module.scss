@@ -20,19 +20,21 @@
     &_link {
       text-decoration: none;
       color: $primary;
+      font-size: 1.2rem;
 
       &:hover {
         opacity: 0.8;
       }
 
       &:active {
-        color: $secondary-light;
+        color: $accent;
       }
 
       &_active {
         text-decoration: none;
-        color: $secondary-light;
-        border-bottom: 1px solid $secondary-light;
+        color: $secondary-dark;
+        border-bottom: 1px solid $secondary-dark;
+        font-size: 1.2rem;
 
         &:hover {
           opacity: 0.8;

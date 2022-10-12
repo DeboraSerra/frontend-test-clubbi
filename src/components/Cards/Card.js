@@ -41,11 +41,11 @@ function Card({ img, title, score, id, isSmall = true }) {
               title="Adicionar aos favoritos"
               className={
                 favorites.some(({ id: fId }) => fId === id)
-                  ? style.fave_active
-                  : style.fave
+                  ? 'fave_active'
+                  : 'fave'
               }
             />
-            <Link to={`/films/${id}`} className={ style.more } title="Mais Informações">
+            <Link to={`/films/${id}`} className="more" title="Mais Informações">
               <More />
             </Link>
           </div>

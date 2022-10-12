@@ -84,7 +84,7 @@ function BigCard() {
             <p>{`Duracao: ${duration} min`}</p>
             <p>{`Dirigido por: ${director}`}</p>
             <button className={ style.banner__left_btn } title="Adicionar aos favoritos" onClick={handleFavorite}>
-              <Favorite className={ isFavorite ? style.fave_active : style.fave } />
+              <Favorite className={ isFavorite ? "fave_active" : "fave" } />
             </button>
           </div>
           <img

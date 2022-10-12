@@ -119,39 +119,4 @@
   &:hover .card__btn_sect {
     visibility: visible;
   }
-
-  & .fave {
-    cursor: pointer;
-    font-size: 25px;
-    margin-right: 15px;
-
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &_active {
-      color: $secondary-light;
-      cursor: pointer;
-      font-size: 25px;
-      margin-right: 15px;
-
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
-
-  & .more {
-    color: #f8f8f8;
-    text-decoration: none;
-    font-size: 25px;
-
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &:active {
-      color: $secondary-light;
-    }
-  }
 }
